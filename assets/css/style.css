@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "vazir-medium";
+    src: url(../fonts/Vazir-Medium.eot) format("eot"), url(../fonts/Vazir-Bold.woff) format("woff"), url(../fonts/Vazir-Bold.woff2) format("woff2");
+    font-weight: 500;
+    font-style: "normal";
+  }
+  
+  * {
+    font-family: "vazir-medium";
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    direction: rtl;
+  }
+  
+  body {
+    font-family: "vazir-medium";
+    overflow-x: hidden;
+  }
+  
+  ul,
+  ol,
+  li {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
