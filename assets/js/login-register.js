@@ -1,25 +1,33 @@
-const visibleButton = document.querySelector('.fa-eye ')
-const hiddenButton = document.querySelector('.fa-eye-slash')
-const passwordInput = document.querySelector('.pass')
+const visibleButton = document.querySelectorAll('.fa-eye ')
+const hiddenButton = document.querySelectorAll('.fa-eye-slash')
+const passwordInput = document.querySelectorAll('.pass')
 function show() {
-    visibleButton.style.display = 'none'
-    hiddenButton.style.display = 'block'
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-    } else {
-        passwordInput.type = "password";
-    }
 }
-function hidden(){
-hiddenButton.addEventListener('click', () => {
-    hiddenButton.style.display = 'none'
-    visibleButton.style.display = 'block'
-    if (passwordInput.type === "text") {
-        passwordInput.type = "password";
-    } else {
-        passwordInput.type = "text";
-    }
-})
+function hidden() {
+
 }
-visibleButton.addEventListener('click', show)
-hiddenButton.addEventListener('click', hidden)
+for (let counter = 0; counter < visibleButton.length; counter++) {
+    visibleButton[counter].addEventListener('click', () => {
+        visibleButton[counter].style.display = 'none'
+        hiddenButton[counter].style.display = 'block'
+        if (passwordInput[counter].type === "password") {
+            passwordInput[counter].type = "text";
+        } else {
+            passwordInput[counter].type = "password";
+        }
+    })
+}
+for (let counter = 0; counter < hiddenButton.length; counter++) {
+    hiddenButton[counter].addEventListener('click', () => {
+        hiddenButton[counter].addEventListener('click', () => {
+            hiddenButton[counter].style.display = 'none'
+            visibleButton[counter].style.display = 'block'
+            if (passwordInput[counter].type === "text") {
+                passwordInput[counter].type = "password";
+            } else {
+                passwordInput[counter].type = "text";
+            }
+        })
+    })
+}
+
