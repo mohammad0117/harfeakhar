@@ -464,6 +464,28 @@
   color: #fc9928;
 }
 
+.main-content .main-content__product div:nth-child(2) div:nth-child(1) div div a {
+  top: 23px;
+  right: 23px;
+  border: 2px solid orange;
+  border-radius: 8px;
+}
+
+.main-content .main-content__product div:nth-child(2) div:nth-child(1) div div a img {
+  width: 60px;
+  height: 60px;
+}
+
+.main-content .main-content__product div:nth-child(2) div:nth-child(1) div div img {
+  width: 350px;
+  height: 350px;
+}
+
+.main-content .main-content__product div:nth-child(2) div:nth-child(2) {
+  right: -150px;
+  width: 126% !important;
+}
+
 .footer {
   background-color: #4b4b53;
 }

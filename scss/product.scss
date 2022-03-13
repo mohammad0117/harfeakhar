@@ -371,6 +371,32 @@
         color: #fc9928;
       }
     }
+    div:nth-child(2) {
+      div:nth-child(1) {
+        div {
+          div {
+            a {
+              top: 23px;
+              right: 23px;
+              border: 2px solid orange;
+              border-radius: 8px;
+              img {
+                width: 60px;
+                height: 60px;
+              }
+            }
+            img {
+              width: 350px;
+              height: 350px;
+            }
+          }
+        }
+      }
+      div:nth-child(2) {
+        right: -150px;
+        width: 126% !important;
+      }
+    }
   }
 }
 //start footer style
