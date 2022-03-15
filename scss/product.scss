@@ -373,8 +373,8 @@
     }
     div:nth-child(2) {
       div:nth-child(1) {
-        div {
-          div {
+        div:nth-child(1)  {
+          div:nth-child(1) {
             a {
               top: 23px;
               right: 23px;
@@ -389,12 +389,71 @@
               width: 350px;
               height: 350px;
             }
+            span{
+              left:0;
+              top: 18px;
+              border-radius: 0 18px 18px 0;
+              background-color: #eee;
+              padding: 15px 38px;
+              i{
+                color: #666;
+              }
+            }
+          }
+          div:nth-child(2){
+            border-radius: 10px;
+            padding: 35px 0;
+            i{
+              color: #ccc;
+              &:hover ~ span{
+                display: block;
+              }
+            }
+            i.fa-circle-dot{
+              margin-right: 70px;
+            }
+            span{
+              top:2px;
+              right: 5px;
+              color: #fff;
+              background-color: #6e6e6e;
+              font-size: 13px;
+              border-radius: 3px;
+              display: none;
+            }
+            p{
+              color: #6e6e6e;
+            }
+            &::after{
+              content: '';
+              position: absolute;
+              top: 18px;
+              right: 215px;
+              background-color: #E8E7EE;
+              width: 2px;
+              height: 60px;
+            }
           }
         }
-      }
-      div:nth-child(2) {
-        right: -150px;
-        width: 126% !important;
+        div:nth-child(2){
+          border-radius: 10px;
+          div:nth-child(1){
+            background-color: #F7F8FA;
+            a{
+              color: orange;
+              border-bottom: 3px solid orange;
+            }
+            &::after{
+              content: '';
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              background-color: #EAE6E6;
+              bottom: 5px;
+              right: 0;
+            }
+          }
+        } 
       }
     }
   }
