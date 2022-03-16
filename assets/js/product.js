@@ -1,3 +1,4 @@
+//script for zoom plugin
 $("#demo").ezPlus({
 
     container: 'ZoomContainer',
@@ -77,3 +78,23 @@ $("#demo").ezPlus({
     zIndex: 999
 
 });
+//script for nav-item
+const borderBottom = document.querySelectorAll('.border-bottom')
+const navItem = document.querySelectorAll('.nav-item')
+const navPage = document.querySelectorAll('.nav-page')
+for (let counter = 0; counter < navItem.length; counter++) {
+    navItem[counter].addEventListener('click', () => {
+        navPage[counter].style.display='block'
+        if (counter === 0) {
+            borderBottom[counter].style.display = 'block'
+            navItem[counter].style.color = 'orange'
+            borderBottom[counter + 1].style.display = 'none'
+            navItem[counter + 1].style.color = '#9A9A9A'
+        } else if (counter === 1) {
+            borderBottom[counter].style.display = 'block'
+            navItem[counter].style.color = 'orange'
+            borderBottom[counter - 1].style.display = 'none'
+            navItem[counter - 1].style.color = '#9A9A9A'
+        }
+    })
+}
