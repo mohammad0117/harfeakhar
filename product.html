@@ -11,6 +11,8 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/bootstrap-rtl.css">
     <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/product.css">
     <title>محصولات</title>
@@ -186,7 +188,7 @@
                                     <p class="d-inline">دی وی دی:2</p>
                                 </div>
                             </div>
-                            <div class="w-100 bg-white mt-4">
+                            <div class="w-100 bg-white mt-4 mb-5">
                                 <div class="p-3 pb-3 position-relative">
                                     <span
                                         class="nav-item cracking text-decoration-none ml-4 pb-3 position-relative">جزییات
@@ -251,19 +253,67 @@
                                     </div>
                                     <div class="nav-page">
                                         <img src="assets/img/user-avatar (1).png" alt="user-avatar">
-                                        <div>
+                                        <div class="position-relative pb-5">
                                             <input class="py-2 pl-3" type="text" placeholder="*نام (فارسی)">
-                                            <input class="py-2  text-right pr-3" type="text" placeholder="*شماره همراه:09xxxxxxxxx">
+                                            <input class="py-2  text-right pr-3" type="text"
+                                                placeholder="*شماره همراه:09xxxxxxxxx">
+                                            <input class="pl-3 pt-3 mt-4" type="text" placeholder="*متن نظر">
+                                            <div class="position-relative d-inline">
+                                                <input class="py-2  text-right pr-3 mt-4" type="text"
+                                                    placeholder="*کد امنیتی">
+                                                <img class="mt-4 position-absolute" src="assets/img/3f8781fe.png"
+                                                    alt="qrcode">
+                                            </div>
+                                            <button class="position-absolute mt-5 px-4 py-2"><i
+                                                    class="fa-solid fa-comment mr-4"></i> ثبت نظر </button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <!-- start section last-products -->
+                            <div class="main-content__last-products mt-4 position-relative col-12">
+                                <div class="ml-3">آخرین محصولات حرف آخر</div>
+                                <button type="button" class="btn btn-primary position-absolute">بیشتر</button>
+                                <div class="owl-two owl-carousel">
+                                    <a href="" class="main-content__last-products__item text-decoration-none d-block bg-white mt-3">
+                                        <img class="img-fluid d-inline-block mt-5" src="assets/img/arabi.jpg" alt="sheshom">
+                                        <p class="text-center mt-4">عربی جامع
+                                            تشریحی کنکوری(عمومی)+کتاب کار
+                                        </p>
+                                        <p class="text-center mt-5">
+                                            <s>940,000 تومان</s>
+                                        </p>
+                                        <p class="text-center"> 714,000
+                                            تومان <i class="fas fa-shopping-cart ml-2"></i></p>
+                                    </a>
+                                    <a href="" class="main-content__last-products__item text-decoration-none d-block bg-white mt-3">
+                                        <img class="img-fluid d-inline-block mt-5" src="assets/img/sheshom.jpg" alt="sheshom">
+                                        <p class="text-center mt-4">عربی جامع
+                                            تشریحی کنکوری(عمومی)+کتاب کار
+                                        </p>
+                                        <p class="text-center mt-5">
+                                            <s>940,000 تومان</s>
+                                        </p>
+                                        <p class="text-center"> 714,000
+                                            تومان <i class="fas fa-shopping-cart ml-2"></i></p>
+                                    </a>
+                                    <a href="" class="main-content__last-products__item text-decoration-none d-block bg-white mt-3">
+                                        <img class="img-fluid d-inline-block mt-5" src="assets/img/sefr-ta-rotbe.jpg" alt="sefr-ta-rotbe">
+                                        <p class="text-center mt-4">عربی جامع
+                                            تشریحی کنکوری(عمومی)+کتاب کار
+                                        </p>
+                                        <p class="text-center mt-5">
+                                            <s>940,000 تومان</s>
+                                        </p>
+                                        <p class="text-center"> 714,000
+                                            تومان <i class="fas fa-shopping-cart ml-2"></i></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- end section last-products -->
                         </div>
                     </div>
                 </div>
-                <br> <br> <br> <br> <br> <br> <br> <br>
-                <br> <br> <br> <br> <br> <br> <br> <br>
-                <br> <br> <br> <br> <br> <br> <br> <br>
             </div>
             <!-- end section product -->
         </div>
@@ -337,7 +387,9 @@
     <script src="assets/js/jquery.mousewheel.js"></script>
     <script src="assets/js/easing.js"></script>
     <script src="assets/js/jquery.colorbox.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/product.js"></script>
+    
 </body>
 
 </html>
