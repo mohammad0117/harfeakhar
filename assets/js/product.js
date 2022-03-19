@@ -118,3 +118,6 @@ $('.owl-two').owlCarousel({
         }
     }
 })
+//script for add-off or low-off product
+const number=document.querySelector('.number')
+const lowButton=document.querySelector('.low-off')
