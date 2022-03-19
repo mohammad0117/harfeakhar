@@ -154,7 +154,7 @@
             <!-- start section product -->
             <div class="container main-content__product">
                 <div class="row">
-                    <div class="bg-white p-2 mt-5 shadow position-relative d-flex align-items-center col-12">
+                    <div class="main-content__product__title p-2 mt-5 shadow col-12">
                         <a href="" class="text-decoration-none text-muted ml-3"> حرف آخر </a>
                         <i class="fas fa-chevron-left mx-2"></i>
                         <a href="" class="text-decoration-none text-muted ml-1"> محصولات </a>
@@ -167,17 +167,16 @@
                             زبان انگلیسی هفتم
                         </span>
                     </div>
-                    <div class="col-12">
+                    <div class="main-content__product__container col-12">
                         <div class="row">
-                            <div class="mt-3 p-0 col-6">
-                                <div
-                                    class="bg-white p-5 d-flex position-relative justify-content-center align-items-center">
+                            <div class="main-content__product__container__right-side mt-3 col-6">
+                                <div class="main-content__product__container__right-side__product-details p-5">
                                     <a href="" class="position-absolute p-1"><img src="assets/img/zaban-haftom.jpg"
                                             alt="zaban-haftom"></a>
                                     <img id="demo" src="assets/img/zaban-haftom.jpg" alt="zaban-haftom">
                                     <span class="position-absolute">0 <i class="fa-solid fa-star"></i></span>
                                 </div>
-                                <div class="bg-white mt-4 position-relative">
+                                <div class="main-content__product__container__right-side__rating mt-4">
                                     <i class="fa-solid fa-star ml-5"></i>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -188,8 +187,11 @@
                                     <p class="d-inline">دی وی دی:2</p>
                                 </div>
                             </div>
-                            <div class="w-100 bg-white mt-4 mb-5">
-                                <div class="p-3 pb-3 position-relative">
+                            <div class="main-content__product__container__left-side mt-3 col-6 pl-4">
+                                <div class="bg-white">123</div>
+                            </div>
+                            <div class="main-content__product__container__nav w-100 bg-white mt-4 mb-5">
+                                <div class="main-content__product__container__nav__item p-3 pb-3 position-relative">
                                     <span
                                         class="nav-item cracking text-decoration-none ml-4 pb-3 position-relative">جزییات
                                         <span class="border-bottom position-absolute"></span></span>
@@ -197,7 +199,7 @@
                                         کاربران <li class="d-inline">(0)</li><span
                                             class="border-bottom position-absolute"></span></span>
                                 </div>
-                                <div>
+                                <div class="main-content__product__container__nav__page">
                                     <div class="nav-page showing">پس از موفقیت
                                         <a href="" class="text-decoration-none">موسسه حرف
                                             آخر</a> در آموزش
@@ -270,39 +272,53 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- start section last-products -->
-                            <div class="main-content__last-products mt-4 position-relative col-12">
-                                <div class="ml-3">آخرین محصولات حرف آخر</div>
-                                <button type="button" class="btn btn-primary position-absolute">بیشتر</button>
-                                <div class="owl-two owl-carousel">
-                                    <a href="" class="main-content__last-products__item text-decoration-none d-block bg-white mt-3">
-                                        <img class="img-fluid d-inline-block mt-5" src="assets/img/arabi.jpg" alt="sheshom">
+                            <div class="main-content__product__container__related-goods mt-2 col-12">
+                                <div class="ml-3">کالاهای مرتبط</div>
+                                <div class="d-flex">
+                                    <a href="" class="bg-white text-decoration-none d-block mr-3 mt-3">
+                                        <img class="img-fluid d-inline-block mt-5" src="assets/img/arabi.jpg"
+                                            alt="sheshom">
                                         <p class="text-center mt-4">عربی جامع
                                             تشریحی کنکوری(عمومی)+کتاب کار
                                         </p>
-                                        <p class="text-center mt-5">
+                                        <p class="text-center mt-3">
+                                            <s>940,000 تومان</s>
+                                        </p>
+                                        <p class="text-center"> 714,000
+                                            تومان <i class="fas fa-shopping-cart ml-2"></i>
+                                        </p>
+                                    </a>
+                                    <a href="" class="bg-white text-decoration-none d-block mx-3 mt-3">
+                                        <img class="img-fluid d-inline-block mt-5" src="assets/img/sheshom.jpg"
+                                            alt="sheshom">
+                                        <p class="text-center mt-4">عربی جامع
+                                            تشریحی کنکوری(عمومی)+کتاب کار
+                                        </p>
+                                        <p class="text-center mt-3">
                                             <s>940,000 تومان</s>
                                         </p>
                                         <p class="text-center"> 714,000
                                             تومان <i class="fas fa-shopping-cart ml-2"></i></p>
                                     </a>
-                                    <a href="" class="main-content__last-products__item text-decoration-none d-block bg-white mt-3">
-                                        <img class="img-fluid d-inline-block mt-5" src="assets/img/sheshom.jpg" alt="sheshom">
+                                    <a href="" class="bg-white text-decoration-none d-block mt-3 mx-3">
+                                        <img class="img-fluid d-inline-block mt-5" src="assets/img/sefr-ta-rotbe.jpg"
+                                            alt="sefr-ta-rotbe">
                                         <p class="text-center mt-4">عربی جامع
                                             تشریحی کنکوری(عمومی)+کتاب کار
                                         </p>
-                                        <p class="text-center mt-5">
+                                        <p class="text-center mt-3">
                                             <s>940,000 تومان</s>
                                         </p>
                                         <p class="text-center"> 714,000
                                             تومان <i class="fas fa-shopping-cart ml-2"></i></p>
                                     </a>
-                                    <a href="" class="main-content__last-products__item text-decoration-none d-block bg-white mt-3">
-                                        <img class="img-fluid d-inline-block mt-5" src="assets/img/sefr-ta-rotbe.jpg" alt="sefr-ta-rotbe">
+                                    <a href="" class="bg-white text-decoration-none d-block mt-3 ml-3">
+                                        <img class="img-fluid d-inline-block mt-5" src="assets/img/sefr-ta-rotbe.jpg"
+                                            alt="sefr-ta-rotbe">
                                         <p class="text-center mt-4">عربی جامع
                                             تشریحی کنکوری(عمومی)+کتاب کار
                                         </p>
-                                        <p class="text-center mt-5">
+                                        <p class="text-center mt-3">
                                             <s>940,000 تومان</s>
                                         </p>
                                         <p class="text-center"> 714,000
@@ -310,7 +326,6 @@
                                     </a>
                                 </div>
                             </div>
-                            <!-- end section last-products -->
                         </div>
                     </div>
                 </div>
@@ -389,7 +404,7 @@
     <script src="assets/js/jquery.colorbox.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/product.js"></script>
-    
+
 </body>
 
 </html>
