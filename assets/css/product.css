@@ -555,12 +555,12 @@
 }
 
 .main-content .main-content__product .main-content__product__container .main-content__product__container__left-side::before {
-  content: '%';
+  content: "%";
   font-size: 17px;
   position: absolute;
   padding: 10px 15px;
   border-radius: 10px 0 30px 0;
-  background-color: #EF4123;
+  background-color: #ef4123;
   left: 0;
   top: 0;
   color: #fff;
@@ -600,24 +600,34 @@
 .main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) p:nth-child(2),
 .main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) p:nth-child(3) {
   font-size: 14px;
-  color: #9A9A9A;
+  color: #9a9a9a;
 }
 
-.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) .add-off, .main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) .low-off {
+.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) .add-off,
+.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) .low-off {
   margin-right: 70px;
   background-color: transparent;
   border: none;
 }
 
-.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) .add-off i, .main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) .low-off i {
+.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) .add-off i,
+.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) .low-off i {
   font-size: 20px;
-  color: #6E6E6E;
+  color: #6e6e6e;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) .add-off i:hover,
+.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) .low-off i:hover {
+  color: #49494a;
 }
 
 .main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) span:nth-child(2) {
   border: 1px solid #ccc;
   border-radius: 18px;
   padding: 12px 20px;
+  width: 50px;
 }
 
 .main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) .low-off i {
@@ -626,9 +636,10 @@
 
 .main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) span:nth-child(4) {
   color: #666;
+  white-space: nowrap;
 }
 
-.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) button:nth-child(5) {
+.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) div:nth-child(5) button {
   border: none;
   background-color: transparent;
   white-space: nowrap;
@@ -636,6 +647,25 @@
   border-radius: 18px;
   font-size: 14px;
   color: #555;
+}
+
+.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) div:nth-child(5) ul {
+  display: none;
+  border: 1px solid #000;
+  right: 11px;
+  top: 40px;
+}
+
+.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) div:nth-child(5) ul li {
+  white-space: nowrap;
+  font-size: 14px;
+  font-size: 14px;
+  cursor: context-menu;
+}
+
+.main-content .main-content__product .main-content__product__container .main-content__product__container__left-side div:nth-child(1) div:nth-child(4) div:nth-child(5) .item-active {
+  background-color: #3092ee;
+  color: #fff;
 }
 
 .main-content .main-content__product .main-content__product__container .main-content__product__container__nav {

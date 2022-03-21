@@ -118,6 +118,53 @@ $('.owl-two').owlCarousel({
         }
     }
 })
-//script for add-off or low-off product
-const number=document.querySelector('.number')
-const lowButton=document.querySelector('.low-off')
+//script for add-off or low-off product and dropdown menu in left-side product
+const numberProducts = document.querySelector('.number')
+const lowButton = document.querySelector('.low-off')
+const addButton = document.querySelector('.add-off')
+const lowIcon = document.querySelector('.low-icon')
+const dropDownButton = document.querySelector('.dropdown-button')
+const wrapperItems = document.querySelector('.wrapper-items')
+const dropDownItem = document.querySelectorAll('.dropdown-item')
+var count = 1
+function cursor(count) {
+    if (count === 1) {
+        lowIcon.style.color = '#999'
+        lowButton.style.cursor = 'context-menu'
+    } else if (count > 1) {
+        lowButton.style.cursor = 'pointer'
+    }
+}
+numberProducts.innerHTML = count
+addButton.addEventListener('click', () => {
+    count++
+    numberProducts.innerHTML = count
+    if (count > 1) {
+        lowIcon.style.color = '#6E6E6E'
+    }
+    cursor(count)
+})
+lowButton.addEventListener('click', () => {
+    if (count > 1) {
+        count--
+        numberProducts.innerHTML = count
+        cursor(count)
+    }
+})
+dropDownButton.addEventListener('click', () => {
+    wrapperItems.classList.toggle('d-block')
+    dropDownItem[counter = 0].classList.add('item-active')
+    dropDownItem[counter + 1].classList.remove('item-active')
+})
+for (let counter = 0; counter < dropDownItem.length; counter++) {
+    dropDownItem[counter].addEventListener('mouseover', () => {
+        if (counter === 0) {
+            dropDownItem[counter].classList.add('item-active')
+            dropDownItem[counter + 1].classList.remove('item-active')
+        }
+        if (counter === 1) {
+            dropDownItem[counter].classList.add('item-active')
+            dropDownItem[counter - 1].classList.remove('item-active')
+        }
+    })
+}
