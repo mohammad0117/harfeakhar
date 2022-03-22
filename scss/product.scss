@@ -534,9 +534,110 @@
                   cursor: context-menu;
                 }
               }
-              .item-active{
+              .item-active {
                 background-color: #3092ee;
-                  color: #fff;
+                color: #fff;
+              }
+              &::after {
+                display: none;
+              }
+            }
+          }
+          div:nth-child(5) {
+            span {
+              color: #666;
+            }
+            a {
+              background-color: #ffa500;
+              color: #fff;
+              border-radius: 4px;
+              font-size: 11px;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              bottom: -20px;
+              right: 26px;
+              width: 90%;
+              height: 1px;
+              background-color: #e8e7ee;
+            }
+          }
+          div:nth-child(6) {
+            div:nth-child(1) {
+              margin-right: 0;
+              p {
+                font-size: 14px;
+                color: #999;
+                small {
+                  font-size: 9px;
+                  color: #999;
+                }
+              }
+              s {
+                color: #666;
+              }
+              &::before {
+                display: none;
+              }
+            }
+            i:nth-child(2) {
+              font-size: 60px;
+              color: #ffa500;
+            }
+            div:nth-child(3) {
+              p:nth-child(1) {
+                font-size: 14px;
+                color: #999;
+                small {
+                  font-size: 9px;
+                  color: #999;
+                }
+              }
+              p:nth-child(2) {
+                color: #3366ff;
+                font-size: 20px;
+              }
+            }
+          }
+          button:nth-child(7) {
+            background-color: #ffa500;
+            border-radius: 20px;
+            color: #fff;
+            border: none;
+            i {
+              transform: rotatey(180deg);
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              bottom: -10px;
+              right: 6px;
+              width: 253%;
+              height: 1px;
+              background-color: #e8e7ee;
+            }
+          }
+          div:nth-child(8) {
+            margin-top: 19px;
+            a {
+              margin-right: 0;
+              border-radius: 0;
+            }
+            p {
+              font-size: 12px;
+            }
+            i {
+              font-size: 30px;
+              color: #666;
+            }
+            a:nth-child(1),
+            a:nth-child(4) {
+              i {
+                transform: rotatey(180deg);
+              }
+              &::before {
+                display: none;
               }
             }
           }
